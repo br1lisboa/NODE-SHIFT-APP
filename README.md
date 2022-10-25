@@ -7,7 +7,7 @@
 
 *1-```npm install``` (to install dependencies)*
 
-*2-Create your own .env file with the MONGOBD key.*
+*2-Create your own .env file with the PORT=***
 
 *3-```node app.js``` (to start the application)*
 
