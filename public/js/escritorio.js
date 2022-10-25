@@ -3,6 +3,7 @@ const lblEscritorio = document.querySelector('h1')
 const btnAtender = document.querySelector('#btnAtender')
 const lblTicket = document.querySelector('small')
 const divAlerta = document.querySelector('.alert')
+const lblPendientes = document.querySelector('#lblPendientes')
 
 
 // Leer params del navegador
@@ -30,8 +31,9 @@ socket.on('disconnect', () => {
     btnAtender.disabled = true;
 });
 
-socket.on('ultimo-ticket', (ultimo) => {
-    //lblNuevoTicket.innerText = 'Ticket ' + ultimo
+socket.on('tickets-pendientes', (pendientes) => {
+    console.log(pendientes)
+    lblPendientes.innerHTML = pendientes
 })
 
 btnAtender.addEventListener('click', () => {
