@@ -12,7 +12,7 @@
 *3-```node app.js``` (to start the application)*
 
 ## *Some characteristics*
-*API REST CRUD model with the best practices, to be used and build a robust server in a fast way.*
+* APP shift application project for commerce *
 
 *Particularly:*
 * Sockets in real proyect.
